@@ -9,3 +9,37 @@ The client-side code is located in the `client` directory.
 ## Server
 
 The server-side code is located in the `server` directory.
+
+## Screenshots of APP
+
+- **Homepage**
+
+![Home Page](app-snapshots/1.png)
+
+- **Shopping Cart**
+
+![Home Page](app-snapshots/2.png)
+
+- **Address Page**
+
+![Home Page](app-snapshots/3.png)
+
+- **Payment Status: Pending**
+
+![Home Page](app-snapshots/4.png)
+
+- **Payment Getaway Page**
+
+![Home Page](app-snapshots/5.png)
+
+- **OTP Confirmation Page**
+
+![Home Page](app-snapshots/6.png)
+
+- **Payment Confirmation Page**
+
+![Home Page](app-snapshots/7.png)
+
+- **Payment Status: Confirmed**
+
+![Home Page](app-snapshots/8.png)

@@ -64,9 +64,20 @@ To get started with this project, follow these steps:
 
 3. **Set Up Environment Variables:**
 
-   Create a `.env` file in the root of your project directory and add the environment variables specified above.
+   Create a `.env` file in the root of your project directory and add the necessary environment variables.
+
+   ```bash
+   PORT                 # server port
+   DB_URL               # mongodb database uri
+   STORE_ID             # store id of aamarPay
+   SIGNATURE_KEY        # signature key of aamarPay
+   PAYMENT_URL          # api for payments [https://aamarpay.readme.io/reference/initiate-payment-json]
+   PAYMENT_VERIFY_URL   # api for payment verification [https://aamarpay.readme.io/reference/search-transaction]
+   ```
 
 4. **Uncomment the seedProducts() function**
+
+   Use this feature to put the dummy data into the mongoDB database for the first time.
 
 5. **Run the Development Server:**
 
