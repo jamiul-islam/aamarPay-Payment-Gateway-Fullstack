@@ -45,8 +45,6 @@ const createOrder = async (orderData: any) => {
     customerAddress: user.address,
   };
 
-  ////////////////////////////////////////////////////////////////
-  //   payment
   const paymentSession = await initiatePayment(paymentData);
 
   return paymentSession;

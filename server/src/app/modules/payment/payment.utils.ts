@@ -32,3 +32,20 @@ export const initiatePayment = async (paymentData: any) => {
     throw new Error("Payment initiation failed!");
   }
 };
+
+export const verifyPayment = async (tnxId: string) => {
+  try {
+    const response = await axios.get(process.env.PAYMENT_VERIFY_URL!, {
+      params: {
+        store_id: process.env.STORE_ID,
+        signature_key: process.env.SIGNATURE_KEY,
+        type: "json",
+        request_id: tnxId,
+      },
+    });
+
+    return response.data;
+  } catch (err) {
+    throw new Error("Payment validation failed!");
+  }
+};
