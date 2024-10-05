@@ -3,13 +3,13 @@ import { useAppSelector } from "../redux/hooks";
 import { useCreteOrderMutation } from "../redux/api/api";
 
 export default function CheckOutPage() {
-  const [createOrder] = useCreteOrderMutation()
+  const [createOrder] = useCreteOrderMutation();
   // State for user input
   const [user, setUser] = useState({
-    name: "Fahim Ahammed",
-    email: "fahim@ph.com",
-    phone: "0123456789",
-    address: "Dhaka, Bangladesh",
+    name: "John Doe",
+    email: "test@gmail.com",
+    phone: "01777777777",
+    address: "London, UK",
   });
 
   // Replace this with actual selector from your Redux store // Replace with your Redux selector
@@ -34,12 +34,12 @@ export default function CheckOutPage() {
     try {
       const res = await createOrder(data).unwrap();
       if (res.success) {
-        console.log(res)
+        console.log(res);
       } else {
-        console.error('Order creation failed:', res.message);
+        console.error("Order creation failed:", res.message);
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
 
