@@ -4,6 +4,7 @@ import App from "../App";
 import Home from "../pages/Home";
 import Cart from "../pages/Cart";
 import CheckOutPage from "../pages/CheckOutPage";
+import Result from "../pages/Result";
 
 export const router = createBrowserRouter([
   {
@@ -15,13 +16,17 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/result/:txId",
+        element: <Result />,
+      },
+      {
         path: "/cart",
         element: <Cart />,
       },
       {
         path: "/checkout",
         element: <CheckOutPage />,
-      }
+      },
     ],
   },
 ]);

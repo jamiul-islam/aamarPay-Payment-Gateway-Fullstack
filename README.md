@@ -43,3 +43,7 @@ The server-side code is located in the `server` directory.
 - **Payment Status: Confirmed**
 
 ![Home Page](app-snapshots/8.png)
+
+- **Order Successful in Frontend**
+
+![Home Page](app-snapshots/9.png)

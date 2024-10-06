@@ -9,8 +9,8 @@ const confirmationController = async (req: Request, res: Response) => {
     status as string
   );
 
-  res.send(result);
-  //   res.send("<h1>payment success</h1>");
+  // res.send(result);
+  res.redirect(`http://localhost:5173/result/${transactionId}`);
 };
 
 export const paymentController = {

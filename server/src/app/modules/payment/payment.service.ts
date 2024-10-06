@@ -5,7 +5,6 @@ import { readFileSync } from "fs";
 
 const confirmationService = async (transactionId: string, status: string) => {
   const verifyResponse = await verifyPayment(transactionId);
-  console.log(verifyResponse);
 
   let result;
   let message = "";
@@ -22,12 +21,13 @@ const confirmationService = async (transactionId: string, status: string) => {
     message = "Payment Failed!";
   }
 
-  const filePath = join(__dirname, "../../../views/confirmation.html");
-  let template = readFileSync(filePath, "utf-8");
+  // const filePath = join(__dirname, "../../../views/confirmation.html");
+  // let template = readFileSync(filePath, "utf-8");
 
-  template = template.replace("{{message}}", message);
+  // template = template.replace("{{message}}", message);
 
-  return template;
+  // return template;
+  return result;
 };
 
 export const paymentServices = {
